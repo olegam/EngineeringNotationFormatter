@@ -1,6 +1,8 @@
 EngineeringNotationFormatter
 ============================
 
+iOS Project demoing C-based Engineering Notation Formatter with a Objective-C wrapper, and handles variable digits, style, and step capability.
+
 ## CocoaPod
 
 The easiest way to use EngineeringNotationFormatter in your project is by including the pod:
@@ -17,19 +19,17 @@ You can then use the formatting function like this:
 DHToEngineeringString(4731230.f, 3, NO); // => 4.73 M
 ```
 
-iOS Project demoing C-based Engineering Notation Formatter with a Objective-C wrapper, and handles variable digits, style, and step capability.
-
-Notes:
+## Notes
     Martin Moene has created a really nice C++ version, see https://github.com/martinmoene/EngFormat-Cpp
 
-RELEASE NOTES:
+## Release notes
     v 1.2 - after Martin Moene found some edge cases that produces failures, redid much of the code
           - log messages can be enabled or not in EngNotation.c
 		  - handle input values which are not normal floats and return Nan, Infinite, etc as appropriate
 		  - incorporated Unit Tests based on the ones written by Martin Moene (we now share them)
     v 1.0 - initial release, basically as I got i from Jukka Korpela
 
-HISTORICAL:
+## Historical
 
 Several years ago I tripped on a great C function that formats a floating point number into engineering notation, in either exponential or International System of Units (SI) notation. This C code was written by Jukka Korpela and posted at http://www.cs.tut.fi/~jkorpela/c/eng.html.
 
