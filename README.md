@@ -1,12 +1,28 @@
 EngineeringNotationFormatter
 ============================
 
+## CocoaPod
+
+The easiest way to use EngineeringNotationFormatter in your project is by including the pod:
+```
+pod 'EngineeringNotationFormatter'
+```
+
+You can then use the formatting function like this:
+```
+#import "DHengNotation.h"
+
+...
+
+DHToEngineeringString(4731230.f, 3, NO); // => 4.73 M
+```
+
 iOS Project demoing C-based Engineering Notation Formatter with a Objective-C wrapper, and handles variable digits, style, and step capability.
 
 Notes:
     Martin Moene has created a really nice C++ version, see https://github.com/martinmoene/EngFormat-Cpp
-	
-RELEASE NOTES: 
+
+RELEASE NOTES:
     v 1.2 - after Martin Moene found some edge cases that produces failures, redid much of the code
           - log messages can be enabled or not in EngNotation.c
 		  - handle input values which are not normal floats and return Nan, Infinite, etc as appropriate
