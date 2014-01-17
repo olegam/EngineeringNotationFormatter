@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary  = 'C-based Engineering Notation Formatter with a Objective-C wrapper, and handles variable digits, style, and step capability. Can also format numbers with SI-style suffixes.'
   s.homepage = 'https://github.com/olegam/EngineeringNotationFormatter'
   s.author   = { 'Ole Gammelgaard Poulsen' => 'ole@shape.dk' }
-  s.source   = { :git => 'git@github.com:olegam/EngineeringNotationFormatter.git', :tag => 'v0.0.1' }
+  s.source   = { :git => 'https://github.com/olegam/EngineeringNotationFormatter.git', :tag => 'v0.0.1' }
 
   s.description = %{
     C-based Engineering Notation Formatter with a Objective-C wrapper, and handles variable digits, style, and step capability. Can also format numbers with SI-style suffixes.
